@@ -1,3 +1,9 @@
+# revision 21628
+# category Package
+# catalog-ctan /support/epspdf
+# catalog-date 2011-02-27 19:07:13 +0100
+# catalog-license gpl
+# catalog-version 0.5.3
 Name:		texlive-epspdf
 Version:	0.5.3
 Release:	1
@@ -64,6 +70,7 @@ similarly-named utilities.
 %doc %{_texmfdistdir}/doc/support/epspdf/index.html
 %doc %{_texmfdistdir}/doc/support/epspdf/pstexi.tex
 %doc %{_infodir}/epspdf.info*
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -81,3 +88,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_infodir}
 mv %{buildroot}%{_texmfdir}/doc/info/*.info %{buildroot}%{_infodir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
