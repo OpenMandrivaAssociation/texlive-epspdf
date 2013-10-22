@@ -6,7 +6,7 @@
 # catalog-version 0.6.0
 Name:		texlive-epspdf
 Version:	0.6.0
-Release:	1
+Release:	2
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/epspdf
@@ -67,7 +67,7 @@ similarly-named utilities.
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/epspdf/epspdf.rb epspdf
+    ln -sf %{_texmfdistdir}/scripts/epspdf/epspdf.tlu epspdf
     ln -sf %{_texmfdistdir}/scripts/epspdf/epspdftk.tcl epspdftk
 popd
 mkdir -p %{buildroot}%{_datadir}
