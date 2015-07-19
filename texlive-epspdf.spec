@@ -6,7 +6,7 @@
 # catalog-version 0.6.0
 Name:		texlive-epspdf
 Version:	0.6.0
-Release:	9
+Release:	10
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/epspdf
