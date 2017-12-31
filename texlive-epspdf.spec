@@ -1,12 +1,6 @@
-# revision 29725
-# category Package
-# catalog-ctan /support/epspdf
-# catalog-date 2013-02-08 11:42:11 +0100
-# catalog-license gpl
-# catalog-version 0.6.0
 Name:		texlive-epspdf
-Version:	0.6.0
-Release:	10
+Version:	0.6.3
+Release:	1
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/epspdf
@@ -38,25 +32,9 @@ similarly-named utilities.
 %files
 %{_bindir}/epspdf
 %{_bindir}/epspdftk
-%{_texmfdistdir}/scripts/epspdf/epspdf.help
-%{_texmfdistdir}/scripts/epspdf/epspdf.ico
-%{_texmfdistdir}/scripts/epspdf/epspdf.tlu
-%{_texmfdistdir}/scripts/epspdf/epspdftk.tcl
+%{_texmfdistdir}/scripts/epspdf
 %doc %{_infodir}/epspdf.info*
-%doc %{_texmfdistdir}/doc/support/epspdf/COPYING
-%doc %{_texmfdistdir}/doc/support/epspdf/Changelog
-%doc %{_texmfdistdir}/doc/support/epspdf/README
-%doc %{_texmfdistdir}/doc/support/epspdf/default.css
-%doc %{_texmfdistdir}/doc/support/epspdf/epspdf.install
-%doc %{_texmfdistdir}/doc/support/epspdf/epspdf.pdf
-%doc %{_texmfdistdir}/doc/support/epspdf/epspdf.texi
-%doc %{_texmfdistdir}/doc/support/epspdf/images/cnv_linux.png
-%doc %{_texmfdistdir}/doc/support/epspdf/images/config_lnx.png
-%doc %{_texmfdistdir}/doc/support/epspdf/images/epspdf.png
-%doc %{_texmfdistdir}/doc/support/epspdf/images/logo.pdf
-%doc %{_texmfdistdir}/doc/support/epspdf/images/main_w8.png
-%doc %{_texmfdistdir}/doc/support/epspdf/index.html
-%doc %{_texmfdistdir}/doc/support/epspdf/pstexi.tex
+%doc %{_texmfdistdir}/doc/support/epspdf
 
 #-----------------------------------------------------------------------
 %prep
