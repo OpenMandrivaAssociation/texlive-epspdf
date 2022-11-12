@@ -1,12 +1,12 @@
 Name:		texlive-epspdf
-Version:	0.6.4
+Version:	53472
 Release:	1
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/epspdf
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdf.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdf.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdf.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdf.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,12 +21,12 @@ tripping opens up several new possibilities compared to older
 similarly-named utilities.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,15 +38,15 @@ similarly-named utilities.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/epspdf/epspdf.tlu epspdf
-    ln -sf %{_texmfdistdir}/scripts/epspdf/epspdftk.tcl epspdftk
+ln -sf %{_texmfdistdir}/scripts/epspdf/epspdf.tlu epspdf
+ln -sf %{_texmfdistdir}/scripts/epspdf/epspdftk.tcl epspdftk
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
