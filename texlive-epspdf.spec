@@ -1,5 +1,5 @@
 Name:		texlive-epspdf
-Version:	53472
+Version:	65825
 Release:	1
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
