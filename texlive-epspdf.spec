@@ -1,6 +1,6 @@
 Name:		texlive-epspdf
 Version:	66119
-Release:	1
+Release:	2
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/epspdf
