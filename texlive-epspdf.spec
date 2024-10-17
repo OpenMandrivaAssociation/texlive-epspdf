@@ -3,7 +3,7 @@ Version:	66119
 Release:	2
 Summary:	Converter for PostScript, EPS and PDF
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/epspdf
+URL:		https://www.ctan.org/tex-archive/support/epspdf
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdf.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdf.doc.r%{version}.tar.xz
